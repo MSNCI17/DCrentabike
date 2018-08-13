@@ -6,4 +6,11 @@ class User < ApplicationRecord
 
   # single user can have many bookings. 
   has_many :bookings
+
+  after_initialize :init
+
+  def init
+    
+  end
+
 end
