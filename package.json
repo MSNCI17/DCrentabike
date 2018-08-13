@@ -1,7 +1,8 @@
 {
-  "name": "rent-a-bike",
-  "private": true,
-  "dependencies": {
-    "yarn": "^1.9.4"
-  }
+  "name": "rentabike",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:slaith/dcrentabike.git",
+  "author": "Somesh <mail@somesh.info>",
+  "license": "MIT"
 }
