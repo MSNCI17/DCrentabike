@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: ec2-user
+  host: localhost
+  database: rent_a_bike
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: ec2-user
+  password: password
+  host: localhost
+  database: rent_a_bike
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: user
+  host: localhost
+  database: rent_a_bike

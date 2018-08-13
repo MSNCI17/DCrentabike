@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row bg-warning rounded p-3 mt-5">
+    <h2>Booking Summary:</h2>
+  </div>
+  <div class="row bg-light p-5 mt-1 rounded">
+    <div class="col">
+      <%=image_tag(@booking.bike.image_url, { :class => "img-fluid", :alt => "Card Image"})%>
+    </div>
+    <div class="col">
+      <a href="<%= bike_path(@booking.bike) %>" class="a-hover">
+        <h2 class="text-muted mb-3">
+          <%= @booking.bike.bike_type %>
+        </h2>
+      </a>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <p>
+            <span>Quantity:</span>
+            <strong>
+              <%= @booking.qty %>
+            </strong>
+          </p>
+          <p>
+            <span>Booked On:</span>
+            <strong>
+              <%= @booking.created_at.to_s[0..10] %>
+            </strong>
+          </p>
+          <p>
+            <span>Start Date:</span>
+            <strong>
+              <%= @booking.start_date %>
+            </strong>
+          </p>
+          <p>
+            <span>End Date:</span>
+            <strong>
+              <%= @booking.end_date %>
+            </strong>
+          </p>
+          <p>
+            <span>No. of Weekend Days:</span>
+            <strong>
+              <%= @booking.weekenddays ? @booking.weekenddays : 'nil' %>
+            </strong>
+          </p>
+          <p>
+            <span>Total No. of Days:</span>
+            <strong>
+              <%= @booking.days ? @booking.days : 'nil' %>
+            </strong>
+          </p>
+        </div>
+        <div class="col border-left">
+          <p>
+            <span>No of Hours:</span>
+            <strong>
+              <%= (@booking.hours).to_s + "hrs" %>
+            </strong>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <p>
+        <span class="lead text-muted">Total Cost:</span>
+        <strong>
+          <%= "$" + @total_cost.to_s%>
+        </strong>
+      </p>
+      <hr>
+      <%= link_to "Go back", bookings_path, :class => "text-dark"%>
+        <%= link_to "Book More", home_path, :class => "text-dark"%>
+    </div>
+  </div>
+</div>
