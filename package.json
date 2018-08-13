@@ -2,7 +2,6 @@
   "name": "rentabike",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@bitbucket.org:slaith/dcrentabike.git",
-  "author": "Somesh <mail@somesh.info>",
+  "author": "Some <someone@gmail.com>",
   "license": "MIT"
 }
