@@ -1,5 +1,5 @@
-# README
-DC(Dublin City) Rent-a-bike App
+
+# DC(Dublin City) Rent-a-bike App
 
 Ruby on Rails Rent-a-bike booking web app for  Dublin City.
 
@@ -11,13 +11,14 @@ Ruby -v- 2.5.1
 
 Rails-v- 5.1.6
 
-Gems
+# Gems
+See Gemfile
 
 Devise for authentication
 
 PG - postgres-10 d/b.
 
-Configuration
+# Configuration
 
 $ cd DCrentabike
 
