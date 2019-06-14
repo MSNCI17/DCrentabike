@@ -5,7 +5,7 @@ Ruby on Rails Rent-a-bike booking web app for  Dublin City.
 
 Developed on the AWS C9 enviroment and deployed to Heroku.
 
-URL- https://github.com/MSNCI17/DCrentabike
+URL- https://dcrentabike23.herokuapp.com/
 
 Ruby -v- 2.5.1
 
