@@ -18,18 +18,26 @@ Devise for authentication
 
 PG - postgres-10 d/b.
 
-# Configuration
-
+## Run locally - localhost3000
+```
 $ cd DCrentabike
 
 $ sudo apt-get install libpq-dev
 
 $	bundle install
 
-$	rake db:migrate
+$ rake db:migrate
+
+$ rails db:seed
 
 $ rails s
+```
+
+## Images -Home page
+<img src = "app/images/DCrentabike-home.png">
+
 
 
 
 * ...
+Sign up and in to book a bike.
