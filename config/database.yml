@@ -2,7 +2,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: ec2-user
+  username: user_1
+  password: test123
   host: localhost
   database: rent_a_bike
 
@@ -10,8 +11,8 @@ development:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: ec2-user
-  password: password
+  username: user_1
+  password: test123
   host: localhost
   database: rent_a_bike
 
@@ -19,6 +20,6 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: user
+  username: user_1
   host: localhost
   database: rent_a_bike
