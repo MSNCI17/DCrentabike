@@ -1,0 +1,7 @@
+{
+  "name": "rentabike",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Some <someone@gmail.com>",
+  "license": "MIT"
+}
